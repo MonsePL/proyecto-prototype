@@ -12,10 +12,7 @@ gulp.task('sass', function(){
 
 });
 
-
-
 gulp.task('default', ['sass' ]);
-
 
 
 
@@ -26,3 +23,10 @@ gulp.task('jade', function(){
     }))
     .pipe(gulp.dest('./assets'))
 })
+
+
+gulp.task('watch', function(){
+    gulp.watch('./src/*.jade', ['jade'])
+});
+
+gulp.task('default', ['jade', 'watch'])
