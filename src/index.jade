@@ -6,19 +6,102 @@ html
     meta(name="viewport", content="width=device-width")
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   body
-    var pageTitle = "Fluffy"
     nav
-      ol
-        li 1
-        li 2
-        li 3
-    div.espacioGris
-  section
-    h1 Soy un título
-    p Soy un parrafito
-    spam hola
-    p.gatito Primer parrafo
-    hola mundo
-    p#gato Segundo parrafo
-    img(src="assets/ciudad.jpg")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js")
+      seccion.row
+        div.col.s4
+         img(src="../assets/img/logo.png").responsive-img
+         ul.cols7
+          li
+           a(href="sass.html") Home
+          li
+           a(href="sass.html") Pages
+          li
+           a(href="sass.html") Blog
+          li
+           a(href="sass.html") Portafolio
+          li
+           a(href="sass.html") Shortcodes
+          li
+           a(href="sass.html")
+            i.material-icons(search="search")
+    section.container
+      div.row
+        div
+         img(src="../assets/img/coming-soon-bg.png").responsive-img
+    section.container
+      div.row
+        div.col.s6
+         img(src="../assets/img/aboutus/1.png").responsive-img
+      div.row
+        div.col.s6
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nisi nulla sed,
+      section.row
+        div.col.s4
+          img(src="../assets/img/home/icon1.png")
+            h3 responsive
+             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius
+             div.col.s4
+              img(src="../assets/img/home/icon2.png")
+              h3 responsive
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius,
+             div.col.s4
+              img(src="../assets/img/home/icon3.png")
+               h3 responsive
+               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius,
+      section.row
+       div.col.s6
+        h2 Triangle Corporate Template
+        p Why our Clients love to work whit us.
+       div.col.s6
+        button.col.s4  TAKE THE TOUR
+         img(src="assets/img/home/tour-icon2.png").col.s6
+      section.row
+        div.col.s6
+          h2 Meet the Team
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius,
+      section.row.container
+            div.col.s3
+             img(src="../assets/img/aboutus/1.jpg").img-responsive
+               h3 John Doe
+               p CEO &amp; Developer
+             div.col.s3
+              img(src="../assets/img/aboutus/2.jpg").img-responsive
+              h3 John Doe
+              p CEO &amp; Developer
+             div.col.s3
+              img(src="../assets/img/aboutus/3.jpg").img-responsive
+              h3 John Doe
+               p CEO &amp; Developer
+             div.col.s3
+              img(src="../assets/img/aboutus/4.jpg").img-responsive
+              h3 John Doe
+               p CEO &amp; Developer
+     section.row
+       div
+        img(src="../assets/img/home/under.png")
+     section.row
+       div
+         div.col.s5
+           h2.row Testimonial
+                    div
+                      img(src="../assets/img/home/profile1.png").col.s4.img-responsive
+                       p.col.s8  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius
+                     div.col
+                      img(src="../assets/img/home/profile2.png").col.s4.img-responsive
+                       p.col.s8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit quidem laboriosam veritatis quae unde molestiae facilis eligendi eius
+
+        div.col.s2
+          h2 Contacts
+          p E-mail: email@email.com
+          p Phone: +1(123)4567890
+          p Fax: +1(123)4567890
+          h2 Address
+          p Lorem ipsum dolor sit amet
+          p Lorem ipsum dolor
+          p Lorem ipsum dolor
+         div.col.s5
+           h2 Send a message
+          input(placeholder="Name")
+          input(placeholder="Email Id") class="formulario">
+          textarea(placeholder="Your text here") class="formulario"
+          button.btn-info SUBMIT
